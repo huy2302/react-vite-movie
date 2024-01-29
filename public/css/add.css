@@ -1,0 +1,115 @@
+.movie_nonactive {
+    display: none;
+}
+
+/* youtube trailer */
+.fancybox-skin {
+    padding: 0 !important;
+}
+
+.fancybox-nav.fancybox-prev,
+.fancybox-nav.fancybox-next {
+    display: none !important;
+}
+
+.fancybox-inner {
+    width: 100% !important;
+    height: 40em !important;
+}
+
+.fancybox-wrap.fancybox-desktop.fancybox-type-iframe.fancybox-opened {
+    width: 70em !important;
+    height: auto;
+    position: absolute;
+    top: 2em !important;
+    left: 15em !important;
+    opacity: 5;
+    overflow: visible;
+}
+
+.ytp-show-cards-title {
+    display: none !important;
+}
+
+.ytp-youtube-button.ytp-button.yt-uix-sessionlink {
+    display: none !important;
+}
+
+.fancybox-overlay.fancybox-overlay-fixed {
+    z-index: 1000000 !important;
+}
+
+.img-avt {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dropdownhover-bottom li a {
+    padding: 10px 30px !important;
+    color: #020d18 !important;
+}
+
+.dropdownhover-bottom {
+    right: 1em !important;
+    left: auto !important;
+    top: 7em !important;
+}
+
+.btn-hide {
+    display: none;
+}
+
+/* Thêm CSS vào file CSS của bạn hoặc sử dụng inline style trong React */
+.react-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Màu nền với độ mờ 0.3 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+    /* Bắt đầu với opacity là 0 để tạo hiệu ứng mờ dần */
+    transition: opacity 1.5s ease-in-out;
+    z-index: 9999;
+}
+
+.react-modal-content {
+    background-color: #fff;
+    /* padding: 20px; */
+    border-radius: 8px;
+    max-width: 70em;
+    border: 4px solid #fff;
+    height: 40em;
+    width: 70em;
+}
+.react-modal-content iframe {
+    border-radius: 5px;
+}
+
+.react-modal-overlay.react-modal-overlay-appear,
+.react-modal-overlay.react-modal-overlay-enter {
+    opacity: 0;
+    /* Khi modal xuất hiện hoặc enter, bắt đầu với opacity là 0 */
+}
+
+.react-modal-overlay.react-modal-overlay-appear-active,
+.react-modal-overlay.react-modal-overlay-enter-active {
+    opacity: 1;
+    /* Khi modal xuất hiện hoặc enter, kết thúc với opacity là 1 */
+}
+
+.react-modal-overlay.react-modal-overlay-exit {
+    opacity: 1;
+    /* Khi modal ẩn đi hoặc exit, bắt đầu với opacity là 1 */
+}
+
+.react-modal-overlay.react-modal-overlay-exit-active {
+    opacity: 0;
+    /* Khi modal ẩn đi hoặc exit, kết thúc với opacity là 0 */
+}
